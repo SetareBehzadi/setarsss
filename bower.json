@@ -1,0 +1,24 @@
+{
+	"name": "tarabit",
+	"description": "TARABIT front-end is a clean and modern template, which is powered by HTML, CSS, and JavaScript.",
+	"main": "",
+	"authors": [
+		"Payamava Team <info@payamava.net>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"tarabit",
+		"front-end",
+		"clean",
+		"modern",
+		"template"
+	],
+	"homepage": "http://payamava.net/",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
