@@ -1,0 +1,43 @@
+.vertical {
+	&._responsive {
+		padding: 30px;
+		li {
+
+
+
+		  a {
+    		border-bottom: 1px solid getColor($baseBorderColors,'lightWhite');
+		  }
+
+		  &.menu-item-has-children {
+
+
+			> a {
+		
+			}
+
+			ul {
+
+
+			  li {
+				a {
+				  ;
+				}
+			  }
+			}
+
+			&.show {
+			  > a {
+				&:before {
+
+				}
+			  }
+
+			  > ul {
+
+			  }
+			}
+		  }
+		}
+	}
+}

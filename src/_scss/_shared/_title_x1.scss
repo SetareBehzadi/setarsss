@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------------------------------------ */
+/*                                         TITLE:  X1                                         */
+/* ------------------------------------------------------------------------------------------ */
+
+[data-title="x1"] {
+	font-size: 24px;
+	color: getColor($baseColors,'black');
+	text-align: center;
+	font-family: light;
+	margin-bottom: 31px;
+	position: relative;
+	font-family: regular;
+
+	&:before , &::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		width: 57px;
+		height: 28px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+	}
+	&:before {
+		right: 43%;
+		background-image: url('../_upload/plant-right.svg');
+		transform: translate(43%, 0);
+
+		@media (max-width: 1365px){
+			 right: 38%;
+		}
+
+		@media (max-width: 767px){
+			 right: 25%;
+		}
+	}
+	&::after {
+		left: 43%;
+		 transform: translate(-43%, 0);
+		 background-image: url('../_upload/plant-left.svg');
+
+		 @media (max-width: 1365px){
+			  left: 38%;
+		 }
+
+		 @media (max-width: 767px){
+			  left: 25%;
+		 }
+	}
+}
