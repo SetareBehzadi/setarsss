@@ -1,0 +1,155 @@
+/* ------------------------------------------------------------------------------------------ */
+/*                                   MAIN MENU:  HORIZONTAL PROFILE                                   */
+/* ------------------------------------------------------------------------------------------ */
+[data-menu="profile"] {
+	/* ------------------------------------    GENERAL   ------------------------------------ */
+	padding: 16px 0;
+	height: 98%;
+
+	ul {
+		li {
+			.icon-chat-m,
+			.icon-exit-m,
+			.icon-notification,
+			.icon-purchases-m,
+			.icon-send-m {
+				font-size: 22px;
+			}
+
+			.icon-chat-m,
+			.icon-exit-m,
+			.icon-notification,
+			.icon-purchases-m,
+			.icon-send-m {
+				font-size: 20px;
+			}
+
+			a {
+				position: relative;
+				display: block;
+				padding: 11px 10px;
+				color: $textColorOne;
+				border-radius: 7px;
+				margin-#{$opposite-side}: 6px;
+
+				span {
+					font-size: 24px;
+					vertical-align: bottom;
+					margin: 0 9px;
+				}
+
+				&:hover {
+					background-color: #8d79ea2e;
+
+					&:before {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					#{$default-side}: -5px;
+					top: 0;
+					height: 100%;
+					width: 5px;
+					background: #8D79EA;
+					border-radius: 5px;
+					visibility: hidden;
+					opacity: 0;
+					transition: background 0.3s ease 0s,color 0.3s ease 0s;
+				}
+			}
+		}
+	}
+}
+/* END [data-menu="horizontal"] */
+
+.nav-two {
+	li {
+		position: relative;
+
+		a {
+			color: $textColorOne;
+
+			&:hover {
+				color: $secondaryColor;
+			}
+		}
+
+		.icon-user-blue {
+			background-color: $secondaryColor;
+			padding: 6px;
+			border-radius: 50%;
+			font-size: 13px;
+
+			&:before {
+				color: #fff;
+			}
+		}
+
+		.icon-next {
+			font-size: 6px;
+			margin: 0 10px;
+		}
+
+		&:hover {
+			.user_menu {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
+	.user_menu {
+		margin: 0;
+		position: absolute;
+		#{$default-side}: 0;
+		top: 100%;
+		background-color: transparent;
+		width: 100%;
+		padding: 10px 0;
+		visibility: hidden;
+		opacity: 0;
+
+		li {
+			background-color: #fff;
+		}
+
+		a {
+			color: $textColorOne;
+			padding: 10px;
+			margin: 0 !important;
+			display: block;
+
+			&:hover {
+				background-color: #8d79ea2e;
+
+				&:before {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				right: -5px;
+				top: 0;
+				height: 100%;
+				width: 5px;
+				background: #8d79ea;
+				border-radius: 5px;
+				visibility: hidden;
+				opacity: 0;
+				transition: background 0.3s ease 0s,color 0.3s ease 0s;
+			}
+		}
+	}
+}
+@media (max-width:1023px) {
+	[data-menu="profile"] {
+		display: none;
+	}
+}

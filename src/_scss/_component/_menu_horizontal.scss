@@ -1,9 +1,7 @@
 /* ------------------------------------------------------------------------------------------ */
 /*                                   MAIN MENU:  HORIZONTAL                                   */
 /* ------------------------------------------------------------------------------------------ */
-
 [data-menu="horizontal"] {
-
 	/* ------------------------------------    GENERAL   ------------------------------------ */
 	display: flex;
 
@@ -24,7 +22,6 @@
 			}
 		}
 	}
-
 	/* ------------------------------------   LEVEL 01   ------------------------------------ */
 	> ul {
 		display: flex;
@@ -53,13 +50,13 @@
 					padding-#{$opposite-side}: 15px;
 
 					&:before {
-						content: "\e916";
+						content: "\e93d";
 						position: absolute;
 						top: 0;
 						#{$opposite-side}: 0;
-						line-height: 50px;
+						line-height: 24px;
 						font-family: "icomoon";
-						font-size: 14px;
+						font-size: 6px;
 						color: $txtHeaderColor;
 						z-index: 999;
 					}
@@ -93,7 +90,6 @@
 			}
 		}
 	}
-
 	/* ------------------------------------     BASIC    ------------------------------------ */
 	._basic {
 		position: relative;
@@ -164,7 +160,6 @@
 			}
 		}
 	}
-
 	/* ------------------------------------     MEGA     ------------------------------------ */
 	._mega {
 		position: static !important;
@@ -196,9 +191,11 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
+
 						a {
 							cursor: default;
 							pointer-events: none;
+
 							img {
 								display: block;
 								margin-top: 30%;
@@ -257,6 +254,5 @@
 			}
 		}
 	}
-
 }
 /* END [data-menu="horizontal"] */

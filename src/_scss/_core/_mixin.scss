@@ -33,8 +33,6 @@
 		@content;
 	}
 }
-
-
 /* ------------------------------------------------------------------------------------------ */
 /*                                       MIXIN:  HIDDEN                                       */
 /* ------------------------------------------------------------------------------------------ */
@@ -43,26 +41,21 @@
 	visibility: hidden !important;
 	opacity: 0 !important;
 }
-
 @mixin visibleBlock {
 	display: block !important;
 	visibility: visible !important;
 	opacity: 1 !important;
 }
-
 @mixin visibleFlex {
 	display: flex !important;
 	visibility: visible !important;
 	opacity: 1 !important;
 }
-
 @mixin noSelect {
 	-webkit-touch-callout: none;
 	user-select: none;
 	-webkit-tap-highlight-color: $transparent;
 }
-
-
 /* ------------------------------------------------------------------------------------------ */
 /*                                        MIXIN: CLEAR                                        */
 /* ------------------------------------------------------------------------------------------ */
@@ -71,23 +64,30 @@
 	display: table !important;
 	clear: both !important;
 }
-
-
-
 /* ------------------------------------------------------------------------------------------ */
 /*                                        MIXIN: box-shadow                                        */
 /* ------------------------------------------------------------------------------------------ */
 @mixin box-shadow {
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+	box-shadow: 0 0 6px rgba(0,0,0,0.10);
 }
-
+@mixin box-shadow-two {
+	box-shadow: 0 10px 20px #DCD5FF;
+}
+@mixin box-shadow-three {
+	box-shadow: 0 20px 20px #7acaff45;
+}
+@mixin box-shadow-fore {
+	box-shadow: 0 12px 30px #6893ee1a;
+}
+@mixin box-shadow-five {
+	box-shadow: 0 3px 35px #00000008;
+}
 @mixin transformChildMenu {
 	-webkit-transform: translate(0, 10px);
-	 transform: translate(0, 10px);
-	 -webkit-transition: all 0.25s ease;
-	 transition: all 0.25s ease;
+	transform: translate(0, 10px);
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
-
 @mixin transformChildMenuHover {
 	-webkit-transform: translate(0, 0);
 	transform: translate(0, 0);

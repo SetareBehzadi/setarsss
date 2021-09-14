@@ -69,6 +69,11 @@ a {
 	}
 }
 
+ul {
+	margin: 0;
+	list-style: none;
+}
+
 ::selection {
 	background-color: $thirdColor;
 	color: $txtHeaderColor

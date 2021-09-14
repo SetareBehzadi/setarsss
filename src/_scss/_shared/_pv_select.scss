@@ -1,0 +1,110 @@
+.pv_select {
+	position: relative;
+	width: 80%;
+
+	select {
+		background-image: none;
+		padding-right: 10px;
+		padding-left: 20px;
+		margin-bottom: 0;
+	}
+
+	&:after {
+		content: "\e93c";
+		color: #6e748e;
+		font-family: 'icomoon' !important;
+		display: inline-block;
+		#{$opposite-side}: 10px;
+		position: absolute;
+		left: 5px;
+		top: 50%;
+		transform: translate(0, -50%);
+		font-size: 20px;
+	}
+
+	> img {
+		// width: 29px;
+		// height: 31px;
+		position: absolute;
+		right: 10px;
+		top: 52%;
+		transform: translate(0, -50%);
+	}
+
+	ul {
+		position: absolute;
+		top: 100%;
+		#{$default-side}: 0;
+		visibility: hidden;
+		opacity: 0;
+		width: 100%;
+		background-color: #fff;
+		//   padding: 5px 15px;
+		border-radius: 0 0 5px 5px;
+		border: 1px solid $secondaryColor;
+		z-index: 5;
+		overflow: hidden;
+
+		&:hover {
+			visibility: visible;
+			opacity: 1;
+
+			li {
+				display: block;
+			}
+		}
+
+		li {
+			display: none;
+			padding: 8px 15px;
+			cursor: pointer;
+			transform: all 0.5s;
+
+			img {
+				margin-#{$opposite-side}: 10px;
+				width: 22px;
+			}
+
+			&:hover {
+				background-color: $secondaryColor;
+				color: #fff;
+			}
+		}
+
+		&:hover {}
+	}
+
+	input {
+		cursor: pointer;
+		background-color: $secondaryColor;
+		padding-#{$default-side}: 70px;
+		color: #fff;
+		height: 61px;
+		border-radius: 23px;
+
+		&:focus {
+			background-color: $secondaryColor;
+		}
+	}
+
+	input:focus ~ ul {
+		visibility: visible;
+		opacity: 1;
+
+		li {
+			display: block;
+		}
+	}
+
+	&._arrow_x1 {
+		width: 100%;
+
+		&:after {
+			content: "\e936";
+			color: #6893ee;
+			font-size: 8px;
+		    font-weight: bold;
+			left: 12px;
+		}
+	}
+}

@@ -30,6 +30,7 @@ module.exports = function(grunt) {
 					expand: true,
 					cwd: 'bower_components/foundation-sites',
 					src: ['**/*.scss'],
+					// src: ['sass/foundation.scss'],
 					dest: 'bower_components/foundation-sites',
 					ext: '.css'
 				}]

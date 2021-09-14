@@ -21,9 +21,17 @@
 /* --------------------------------------    SHARED    -------------------------------------- */
 @import './_shared/button_x1';
 @import './_shared/button_x2';
+@import './_shared/link_x1';
 @import './_shared/title_x1';
 @import './_shared/title_x2';
 @import './_shared/title_x3';
+
+@import './_shared/table_x1';
+@import './_shared/input_x1';
+@import './_shared/input_x2';
+@import './_shared/pv_select';
+@import './_shared/form_x1';
+@import './_shared/pv_alert';
 
 
 /* --------------------------------------   COMPONENT  -------------------------------------- */
@@ -41,22 +49,33 @@
 @import './_component/tab_accordion_x1';
 @import './_component/textbox_x1';
 
+@import './_component/box_content_x1';
+@import './_component/box_content_x2';
+@import './_component/box_content_x3';
+@import './_component/box_content_x4';
+@import './_component/box_content_x5';
 
+@import './_component/pagination_x3';
+
+@import './_component/menu-panel';
 /* --------------------------------------    PLUGIN    -------------------------------------- */
 @import './_plugin/plyr';
 
 
 /* --------------------------------------    LAYOUT    -------------------------------------- */
+@import './_layout/general';
 @import './_layout/header';
 @import './_layout/headerMain_x1';
 @import './_layout/footerMain_x1';
 @import './_layout/offCanvas';
 @import './_layout/grid';
 @import './_layout/breadcrumb';
+@import './_layout/dashboard';
 
 
 /* --------------------------------------     PAGE     -------------------------------------- */
 @import './_page/uiKit';
+@import './_page/coin-sale-buy';
 
 
 /* --------------------------------------    UTILITY   -------------------------------------- */

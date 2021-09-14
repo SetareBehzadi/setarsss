@@ -1,0 +1,130 @@
+/* ------------------------------------------------------------------------------------------ */
+/*                                          BOX:  X1                                          */
+/* ------------------------------------------------------------------------------------------ */
+.box-content-x2 {
+	background-image: url("../media/cp-img/back-new.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 140px 0;
+	padding: 133px 15px 30px;
+	position: relative;
+
+	.row {
+		@include box-shadow-three;
+		padding: 30px;
+		border-radius: 72px;
+		margin: 50px auto;
+		overflow: hidden;
+		background-color: #fff;
+	}
+
+	._obs-img {
+		position: absolute;
+		left: 29%;
+		top: -50px;
+
+		&._x1 {
+			bottom: -45px;
+			top: auto;
+			left: 20%;
+			width: 123px;
+		}
+	}
+
+	.table-scroll {
+		width: 100%;
+
+		&::-webkit-scrollbar {
+			width: 3px;
+			height: 5px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #f1f1f1;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: $secondaryColor;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background: $secondaryColor;
+		}
+	}
+
+	table {
+		min-width: 1023px;
+		width: 100%;
+
+		tbody {
+			tr {
+				td:first-child {
+					display: flex;
+					padding: 12px 10px 12px 0;
+					align-items: center;
+
+					.name {
+						min-width: 55px;
+						text-align: center;
+
+						&._fa {
+							font-family: "bold";
+							text-align: initial;
+						}
+					}
+				}
+			}
+		}
+
+		.action {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+}
+@media (max-width:1023px) {
+	.box-content-x2 {
+		margin: 78px 0;
+
+		.row {}
+
+		._obs-img {
+			width: 106px;
+
+			&._x1 {}
+		}
+	}
+}
+@media (max-width:767px) {
+	.box-content-x2 {
+		margin: 0;
+		padding: 99px 15px 30px;
+		background-position: center;
+
+		.row {}
+
+		._obs-img {
+			display: none;
+
+			&._x1 {
+				display: block;
+			}
+		}
+
+		.table-scroll {}
+
+		table {
+			tbody {
+				tr {
+					td:first-child {
+						.name {
+							&._fa {}
+						}
+					}
+				}
+			}
+
+			.action {}
+		}
+	}
+}

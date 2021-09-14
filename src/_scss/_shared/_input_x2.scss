@@ -1,0 +1,66 @@
+.input_x2 {
+	margin-bottom: 0;
+	color: $textColorOne;
+	font-size: 14px;
+
+	&._p_x1 {
+		padding: 7px 20px;
+	}
+
+	&._p_x2 {
+		padding: 5px 15px;
+	}
+
+	&._radius_15 {
+		border-radius: 15px;
+	}
+
+	&._tp1 {
+		border-color: #CCDDFF;
+	}
+
+	&._lg {
+		height: 61px;
+		border-radius: 23px;
+		padding: 10px 30px;
+	}
+
+	&._sm {
+		height: 48px;
+		border-radius: 15px;
+		padding: 5px 15px;
+	}
+
+	&._sm_x1 {
+		height: 51px;
+		border-radius: 15px;
+		padding: 5px 15px;
+	}
+
+	&._noborder {
+		border: none;
+	}
+
+	&._num {
+		direction: ltr;
+	}
+
+	&._shadow {
+		@include box-shadow-five;
+	}
+
+	&._noshadow {
+		box-shadow: none;
+	}
+
+	&._bg_blue {
+		background-color: #ECF2FD;
+	}
+
+	&._border_blue {
+		border: 1px solid #6893EE;
+	}
+	&._d_ltr {
+		direction: ltr;
+	}
+}
