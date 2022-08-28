@@ -54,11 +54,40 @@
       left: 40px;
     }
   }
+
+  .owl-carousel {
+    color: #fff;
+
+    ._content {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .me-2 {
+      margin-left: 8px !important;
+    }
+
+    ._sec_1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    ._sec_3 {
+      display: flex;
+      color: #b7bdc6 !important;
+      caret-color: #b7bdc6 !important;
+      justify-content: center;
+    }
+  }
+
 }
 
-.swiper {
-
-}
 
 @media (max-width: 1399px) {
   .box-content-x1 {
