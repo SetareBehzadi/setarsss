@@ -16,3 +16,21 @@ $('.show_add_item').click(function(e) {
 	e.preventDefault();
 	$('.content_add_item').toggleClass('show');
 })
+
+$('.has-child > a').click(function(e) {
+	e.preventDefault();
+	let parentEl = $(this).parent();
+	parentEl.toggleClass('active');
+	//parentEl.siblings().removeClass('active');
+})
+
+// var swiper52 = new Swiper("#mySwiper", {
+// 	direction: "vertical",
+// 	// slidesPerView: "auto",
+// 	spaceBetween: 30,
+// 	slidesPerView: 3,
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		clickable: true,
+// 	},
+// });

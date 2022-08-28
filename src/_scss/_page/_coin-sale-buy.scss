@@ -1,7 +1,6 @@
 /* ------------------------------------------------------------------------------------------ */
 /*                                         PAGE: HOME                                         */
 /* ------------------------------------------------------------------------------------------ */
-
 .coin-badge {
 	text-align: center;
 	border-radius: 8px;
@@ -91,11 +90,11 @@
 
 ._user_img_icon {
 	text-align: end;
+	position: absolute;
+  left: 0;
+  bottom: -149px;
+  z-index: -1;
 
-	img {
-		width: 115px;
-		margin-top: -100px;
-	}
 }
 @media (max-width:767px) {
 	._user_img_icon {

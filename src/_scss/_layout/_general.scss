@@ -4,6 +4,16 @@ body {
 	}
 	// margin-bottom: 5000px;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
 
 h2 {
 	font-size: 24px;
@@ -12,6 +22,14 @@ h2 {
 
 .d-ltr {
 	direction: ltr;
+}
+
+.text_end {
+	text-align: end;
+}
+
+.pv-bold {
+	font-family: "BOLD" !important;
 }
 
 .text-green {
@@ -23,10 +41,54 @@ h2 {
 }
 
 .pointer {
-	cursor: pointer;
+	cursor: pointer !important;
+}
+
+.succes {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #12A73A;
+	font-family: 'Bold';
+
+	svg {
+		margin: 0 5px;
+	}
+
+	ellipse {
+		fill: #12A73A;
+	}
+}
+
+.failed {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #FF0000;
+	font-family: 'Bold';
+
+	svg {
+		margin: 0 5px;
+	}
+
+	ellipse {
+		fill: #FF0000;
+	}
 }
 
 .bg_pv {
+	&._green {
+		background-color: #12A73A !important;
+	}
+
+	&._red {
+		background-color: #FF0000 !important;
+	}
+
+	&._yellow {
+		background-color: #FFBB21 !important;
+	}
+
 	&._purple {
 		background-color: $secondaryColor !important;
 	}
@@ -60,6 +122,18 @@ h2 {
 	}
 }
 
+.d-flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-start {
+	justify-content: Start;
+}
+
 .list_info {
 	padding: 24px;
 	color: #495057;
@@ -79,8 +153,115 @@ h2 {
 			margin-#{$opposite-side}: 5px;
 		}
 	}
+
+	&._box {
+		padding: 24px 13px;
+
+		h3 {
+			padding: 0 32px;
+		}
+
+		.content {
+			border: 1px solid #979caf4f;
+			padding: 5px 9px;
+			border-radius: 17px;
+			background-color: #ecf2fd;
+			margin-bottom: 10px;
+		}
+	}
 }
 
 .pv_mb_0 {
 	margin-bottom: 0 !important;
+}
+
+.text--green {
+	color: $secondaryColor;
+}
+
+.d-inline-block {
+	display: inline-block;
+}
+.d-block {
+	display: block;
+}
+
+.show_wallet_amount {
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	color: #000;
+
+	.icon-card-p {
+		font-size: 24px;
+		margin: 0 5px;
+
+		&:before {
+			color: #8a8e93;
+		}
+	}
+}
+
+.wallet-btn {
+	display: flex;
+
+	._green {
+		width: 221px;
+		height: 41px;
+		@media (max-width: 767px) {
+			width: 155px;
+		}
+	}
+
+	._gary {
+		width: 133px;
+		height: 41px;
+		margin: 0 5px;
+		@media (max-width: 767px) {
+			width: 120px;
+		}
+	}
+}
+
+._payment_det {
+	max-width: 600px;
+	margin: auto;
+
+	table {
+		border-radius: 15px;
+		overflow: hidden;
+		background-color: #f0f9f2;
+
+		tbody {
+			border-radius: 15px;
+			overflow: hidden;
+			background-color: #f0f9f2;
+		}
+
+		tr {
+			background-color: transparent !important;
+
+			th {
+				text-align: right;
+			}
+
+			td {
+				text-align: left;
+			}
+		}
+	}
+}
+
+.row {
+	&._w_100 {
+		max-width: 100% !important;
+	}
+	&._p_20 {
+		padding: 0 20px;
+	}
+}
+@media (max-width:767px) {
+	.mobile-none {
+		display: none;
+	}
 }

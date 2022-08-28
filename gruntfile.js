@@ -50,6 +50,7 @@ module.exports = function(grunt) {
 					"src/_scss/plugin/lightslider.min.css",
 					"src/_scss/plugin/hover-min.css",
 					"src/_scss/plugin/plyr.css",
+					"src/_scss/plugin/swiper-bundle.min.css",
 					"src/_scss/style.css"
 				],
 				dest: 'src/css/app.css',
@@ -75,6 +76,7 @@ module.exports = function(grunt) {
 					"src/_script/plugin/lg-zoom.min.js",
 					"src/_script/plugin/lightslider.min.js",
 					"src/_script/plugin/plyr.min.js",
+					"src/_script/plugin/swiper-bundle.min.js",
 					"src/_script/_core/index.js",
 					"src/_script/_core/variables.js",
 					"src/_script/_core/functions.js",

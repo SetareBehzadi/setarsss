@@ -1,0 +1,124 @@
+/* ------------------------------------------------------------------------------------------ */
+/*                                          BOX:  X3                                          */
+/* ------------------------------------------------------------------------------------------ */
+
+.box-content-x6 {
+
+	thead, tbody, tfoot {
+		background-color: transparent;
+		color: #fff;
+		border: none;
+	}
+
+	h2 {
+		color: #fff;
+	}
+	table tbody tr {
+		 border-bottom: 1px solid #f1f1f11f !important;
+
+		a {
+			color: #fff;
+		}
+		.ltr {
+			direction: ltr;
+		}
+	}
+
+	._link_c1 {
+		color: $secondaryColor;
+		&:hover {
+			color: $linkBackColorHoverSecondary;
+		}
+	}
+	.coin-cat ul {
+		display: flex;
+		padding: 20px 0;
+	}
+	.coin-cat ul li {
+		padding: 7px 12px;
+		font-size: 13px;
+		cursor: pointer;
+		border: 1px solid #ddd;
+		margin: 0;
+		border-right: none;
+		transition: color 0.4s;
+	}
+	.coin-cat ul li:first-child {
+		border-right: 1px solid #ddd;
+	}
+	.coin-cat ul li.active, .coin-cat ul li:hover {
+		background-color: #556ee6cc;
+		border-color: #556ee6cc;
+		color: #fff;
+	}
+
+	.table-coin {
+		padding: 50px 20px 0 20px;
+		margin: 100px auto;
+		//box-shadow: 0 15px 55px rgba(123, 140, 156, 0.22);
+		border-radius: 15px;
+		color: #fff;
+	}
+
+	.table-coin .table {
+		color: #3E4851;
+	}
+	.table-coin thead {
+		line-height: 38px;
+	}
+	.table-coin thead tr {
+		border-bottom: 1px solid #707070;
+		height: 37px;
+		padding: 10px 0;
+		margin: 19px;
+	}
+	.table-coin tbody {
+		line-height: 50px;
+	}
+	.table-coin tbody td {
+		line-height: initial;
+	}
+
+
+
+	@keyframes transform-rotate {
+		0% {
+			-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg);
+		}
+		100% {
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
+
+
+	@media (max-width: 1023px) {
+
+
+		.coin-cat ul {
+			flex-wrap: wrap;
+		}
+		.coin-cat ul li {
+			flex: 0 0 50%;
+			max-width: 50%;
+			border-bottom: none;
+		}
+		.coin-cat ul li:nth-child(3) {
+			border-right: 1px solid #ddd;
+		}
+		.coin-cat ul li:nth-child(5) {
+			border-right: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+		.coin-cat ul li:nth-child(6) {
+			border-bottom: 1px solid #ddd;
+		}
+	}
+	@media (max-width: 767px) {
+
+	}
+
+
+	/*# sourceMappingURL=style.css.map */
+}

@@ -35,6 +35,14 @@
 		font-size: 14px;
 	}
 
+	&._md_3 {
+		width: 146px;
+		height: 50px;
+		border-radius: 15px;
+		font-size: 14px;
+		margin-right: 9px;
+	}
+
 	&._sm {
 		width: 103px;
 		height: 38px;
@@ -96,6 +104,14 @@
 
 		&:hover {
 			background-color: #d30101;
+		}
+	}
+
+	&._gary {
+		background-color: #6e6e6e;
+
+		&:hover {
+			background-color: #535353;
 		}
 	}
 

@@ -16,6 +16,11 @@ body.profile {
 	padding-bottom: 100px;
 	color: $textColorOne;
 
+	._heght-170 {
+		align-items: center !important;
+		height: 170px;
+	}
+
 	.user_info {
 		display: flex;
 		align-items: baseline;
@@ -24,6 +29,81 @@ body.profile {
 
 		img {
 			width: 57px;
+		}
+
+		&._succes {
+			background-image: url("../media/cp-img/Intersection.png");
+			background-repeat: no-repeat;
+			background-position: -98px;
+			background-size: cover;
+		}
+
+		._status {
+			margin-left: 21px;
+		}
+
+		._flex {
+			display: flex;
+			align-items: center;
+		}
+
+		[class^=icon-] {
+			background: #ecf2fd;
+			padding: 11px;
+			border-radius: 5px;
+			margin: 0 0 0 15px;
+			float: right;
+
+			&.icon-user-blue {}
+
+			&:before {
+				font-size: 22px;
+			}
+
+			&.icon-credit-card-b {
+				padding: 13.2px 9.25px;
+
+				&:before {
+					font-size: 18px;
+				}
+			}
+
+			&.icon-resume-and-cv-b {
+				padding: 9.6px 12.5px;
+
+				&:before {
+					font-size: 25px;
+				}
+			}
+
+			&.icon-email-blue {
+				padding: 13.6px 10.9px;
+
+				&:before {
+					font-size: 17px;
+				}
+			}
+
+			&.icon-smartphone-blue {
+				padding: 8.8px 13.7px;
+
+				&:before {
+					font-size: 27px;
+				}
+			}
+
+			&.icon-lock {
+				padding: 11px 13.8px;
+
+				&:before {
+					font-size: 23px;
+				}
+			}
+		}
+
+		&._name {
+			align-items: center;
+			height: 170px;
 		}
 	}
 
@@ -60,6 +140,10 @@ body.profile {
 
 	.user_detail {
 		padding: 34px 20px;
+
+		&._profile {
+			padding: 19px 20px;
+		}
 
 		li {
 			padding: 11px 0;
@@ -140,6 +224,7 @@ body.profile {
 					}
 				}
 			}
+
 			&._support {
 				li {
 					&:first-child {
@@ -367,6 +452,18 @@ body.profile {
 @media (max-width:767px) {
 	body.profile {
 		.coin_amount_value {
+
+			.head-filter {
+				flex-direction: column;
+
+				li {
+					margin-bottom: 10px;
+				}
+				&._payment {
+					flex-direction: row;
+				}
+			}
+
 			table {
 				font-size: 13px;
 
@@ -396,5 +493,32 @@ body.profile {
 	.row .columns {
 		padding-right: 10px;
 		padding-left: 10px;
+	}
+}
+
+.panel-menu-mobile {
+	.off-canvas {
+		margin-top: 75px;
+		box-shadow: none !important;
+	}
+}
+
+.sheba {
+	position: relative;
+	._sheba-label {
+		position: absolute;
+    left: 0;
+    height: 100%;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF2FD;
+    border: 1px solid #6893EE;
+    border-radius: 15px;
+	}
+	input {
+		padding-left: 47px !important;
+		letter-spacing: 1px;
 	}
 }

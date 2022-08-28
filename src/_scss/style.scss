@@ -32,6 +32,7 @@
 @import './_shared/pv_select';
 @import './_shared/form_x1';
 @import './_shared/pv_alert';
+@import './_shared/pv_badge';
 
 
 /* --------------------------------------   COMPONENT  -------------------------------------- */
@@ -44,6 +45,7 @@
 @import './_component/menu_horizontal';
 @import './_component/menu_responsive';
 @import './_component/menu_vertical';
+@import './_component/_menu-panel-response';
 @import './_component/pagination_x1';
 @import './_component/slider_x1';
 @import './_component/tab_accordion_x1';
@@ -54,10 +56,13 @@
 @import './_component/box_content_x3';
 @import './_component/box_content_x4';
 @import './_component/box_content_x5';
+@import './_component/box_content_x6';
+@import './_component/box_content_x8';
 
 @import './_component/pagination_x3';
 
 @import './_component/menu-panel';
+@import './_component/_user-menu-panel';
 /* --------------------------------------    PLUGIN    -------------------------------------- */
 @import './_plugin/plyr';
 
@@ -76,6 +81,9 @@
 /* --------------------------------------     PAGE     -------------------------------------- */
 @import './_page/uiKit';
 @import './_page/coin-sale-buy';
+@import './_page/_response_ticket';
+@import './_page/_auth';
+@import './_page/_page';
 
 
 /* --------------------------------------    UTILITY   -------------------------------------- */

@@ -1,0 +1,84 @@
+/* ------------------------------------------------------------------------------------------ */
+/*                                   MAIN MENU:  HORIZONTAL PROFILE                                   */
+/* ------------------------------------------------------------------------------------------ */
+
+#off_canvas_right {
+	max-width: 310px;
+
+	.panel-menu {
+		padding: 0 20px;
+		// margin-top: 38px;
+	}
+}
+
+.nav-one {
+	li._parent {
+		position: relative;
+
+		&:after {
+			content: "\e93d";
+			color: #6e748e;
+			font-family: "icomoon" !important;
+			speak: never;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			position: absolute;
+			left: -8px;
+			top: 62%;
+			transform: translate(0 , -50%);
+			font-size: 5px;
+		}
+
+		&:hover {
+			&:after {
+				color: #8d79ea;
+			}
+		}
+
+		ul.level_n {
+			border-radius: 5px;
+			background-color: #8d79ea;
+			padding: 0 0 14px;
+			top: 200% !important;
+			display: none;
+
+			&:before {
+				content: '';
+				width: 100%;
+				height: 20px;
+				background-color: transparent;
+				display: block;
+				margin-top: -20px;
+				// position:absolute;
+				// top: 0
+			}
+
+			a {
+				color: #ffffff;
+				margin: 0 10px;
+				padding: 10px;
+				border-bottom: 1px solid #ffffff63;
+			}
+
+			li:hover {
+				a {
+					background-color: #745dde;
+					// color: #ffad20;
+					// border-bottom: 1px solid #ffad20;
+				}
+			}
+		}
+
+		&:hover {
+			ul.level_n {
+				display: block;
+			}
+		}
+	}
+}
+@media (max-width:1023px) {}
